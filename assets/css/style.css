@@ -1,0 +1,556 @@
+* { box-sizing: border-box;
+
+ }
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body { 
+	margin: 0 auto;
+	background-image: url("../images/fresh_snow_@2X.png");
+}
+
+#nav {
+	background-color: #ffffff;
+	border-bottom-style: solid;
+	border-color: #cccccc;
+	height: 90px;
+	width: 100%;
+	padding-left: 160px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+#name {
+	width: 235px;
+	height: 90px;
+	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 15px;
+	float: left;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 10px;
+}
+
+#links {
+	width: 330px;
+	height: 60px;
+	background-color: #ffffff;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+	float: right;
+	color: #777777;
+	margin-right:100px;
+	padding-top: 20px;
+}
+
+li {
+	display: inline;
+}
+
+#portfolio {
+	width: 140px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-color: #cccccc;
+	border-width: 2px;
+	padding: 0px 10px 0px 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
+
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+}
+
+#article {
+	width: 650px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+	background-color: #ffffff;
+	color: #777777;
+	float: left;
+	font-size: 18px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	padding: 30px;
+	margin-bottom: 130px;
+	margin-right: 70px;
+}
+
+#aboutme {
+	width: 90%;
+	height: 60px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	background-color: #ffffff;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#aboutmefont {
+	width: 550px;
+	margin: 0 auto;
+	float: left;
+	font-size: 30px;
+}
+
+#image {
+	float: left;
+	padding: 20px 20px 10px 10px;
+}
+
+#paragraphs {
+	line-height: 1.8;
+	padding: 15px;
+}
+
+
+.cleafix {
+	overflow: auto;
+}
+
+br {
+	display: block;
+            content: "";
+            margin-top: 20px;
+}
+
+aside {
+	width: 240px;
+	height: 200px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+	background-color: #ffffff;
+	float:left;
+	padding: 20px 10px 10px 0px;
+}
+
+#connect {
+	width: 200px;
+	height: 50px;
+	border-bottom-style: solid;
+	border-color: #dddddd;
+	border-width: 2px;
+	background-color: #ffffff;
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+
+
+#github, #linkedin, #stack {
+	float: left;
+	margin-top: 12px;
+}
+
+#github {
+	margin-left: 15px;
+}
+
+#linkedin, #stack {
+	margin-left: 25px;
+}
+
+footer {
+	clear: both;
+	background-color: #666666;
+	border-top-style: solid;
+	border-width: 10px;
+	border-color: #4aaaa5;
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 11px;
+	padding-top: 30px;
+	color: #ffffff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+
+/* Contact page */
+
+#contactform { 
+	width: 650px;
+	height: 610px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+	background-color: #ffffff;
+	color: #777777;
+	float: left;
+	margin: 0px 70px 120px 0px;
+	font-size: 15px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	padding: 30px 0px 0px 50px;
+}
+
+#form {
+	width: 90%;
+	margin-top: 30px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+input {
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+#message {
+	height: 180px;
+}
+
+input[type=submit] {
+	background-color: #4aaaa5;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+/* Portfolio page */
+
+#portfoliopics {
+	width: 650px;
+	height: 900px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+	background-color: #ffffff;
+	color: #777777;
+	float: left;
+	margin: 0px 60px 120px 0px;
+	font-size: 18px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	padding:30px 0px 30px 30px;
+}
+
+.image {
+	position: relative;
+	float: left;
+	margin: 20px 30px 30px 0px;
+}
+
+.banner {
+	position: absolute;
+	top: 110px;
+	left: 0;
+	width: 270px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-family:'Georgia', Times, Times New Roman, serif;
+	font-size: 23px;
+	text-align: center;
+	height: 60px;
+	font-weight: lighter;
+	padding-top: 18px;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 980px){
+
+#nav {
+	padding-left: 100px;
+}
+
+#container {
+	float: left;
+	width: 100%;
+	padding: 40px 60px 40px 100px;
+}
+
+#article {
+	width: 50%;
+	margin-bottom: 80px;
+	margin-right: 50px;
+}
+
+aside {
+	width: 38%;
+	padding: 30px 20px 20px 15px;
+	float: left;
+}
+
+#aboutme {
+	width: 100%;
+}
+
+#connect {
+	width: 100%;
+	margin: 0;
+}
+
+#github {
+	margin-left: 0px;
+}
+
+#connectbttns {
+	margin-top: 10px;
+}
+
+#image, #profilepic {
+	width: 100%;
+	height: 30%;
+	padding: 10px 0 10px 0;
+}
+
+#stack, #linkedin {
+	margin-left: 15px;
+}
+
+/**/
+
+#portfoliopics {
+	width: 50%;
+	padding-right: 30px;
+	margin-bottom: 80px;
+	height: 100%;
+}
+
+.image {
+	width: 100%;
+}
+
+#image1, #image2, #image3, #image4, #image5 {
+	width: 100%;
+	height: 75%;
+}
+
+.banner {
+	width: 100%;
+	top: 170px;
+}
+
+/**/
+
+#contactform {
+	width: 50%;
+	margin-right: 30px;
+	padding: 30px;
+}
+
+
+}
+
+@media screen and (max-width: 768px){
+
+
+#nav {
+	padding-left: 20px;
+}
+
+#container {
+	float: left;
+	width: 100%;
+	padding: 20px;
+}
+
+#article {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+aside {
+	width: 100%;
+	margin-bottom: 90px;
+	padding: 30px 50px 0 30px;
+}
+
+#aboutme {
+	width: 100%;
+}
+
+#connect {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#links {
+	margin: 0;
+}
+
+#profilepic {
+	width: 100%;
+	height: 100%;
+}
+
+#image, #profilepic {
+	width: 100%;
+	height: 100%;
+	padding: 10px 0 10px 0;
+}
+
+/**/
+
+#portfoliopics {
+	padding: 30px;
+	width: 100%;
+	height: 100%;
+	margin: 20px 0px 40px 0px;
+}
+
+.image {
+	margin: 30px 20px 0px 10px;
+	padding: 0;
+	width: 45%;
+	height: 50%;
+}
+
+#image1, #image2, #image3, #image4, #image5 {
+	width: 100%;
+	height: 50%;
+}
+
+.banner {
+	width: 100%;
+	top: 135px;
+}
+
+/**/
+
+#contactform {
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding: 30px;
+}
+
+}
+
+
+@media screen and (max-width: 640px){
+
+body {
+	width: 100%;
+	margin-left:0;
+}
+
+#nav {
+	width: 100%;
+	overflow: auto;	
+	padding: 0;
+	height: 200%;
+}
+
+
+#name {
+	width: 100%;
+	padding-top: 20px;
+}
+
+h2 {
+	margin: 0;
+	padding-top: 10px;
+}
+
+ul {
+	padding: 0;
+}
+
+#links {
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 0;
+}
+
+#container {
+	float: left;
+	width: 100%;
+	padding: 20px 20px 40px 20px;
+}
+
+#article, {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+aside {
+	width: 100%;
+	margin-bottom: 80px;
+	padding: 30px 30px 0 30px;
+}
+
+
+#aboutme {
+	width: 100%;
+}
+
+#image, #profilepic {
+	width: 100%;
+	height: 100%;
+	padding: 10px 0 10px 0;
+}
+
+#connect {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#portfolio {
+	margin: 0 80px 0 80px;
+	padding: 0 80px 0 80px;
+}
+
+
+/**/
+
+#portfoliopics {
+	width: 100%;
+	margin: 20px 0px 30px 0px;
+	padding: 30px 30px 20px 20px;
+	height: 100%;
+}
+
+.image {
+	width: 100%;
+	margin-left: 0px;
+}
+
+.banner {
+	width: 100%;
+	top: 335px;
+}
+
+#image1, #image2, #image3, #image4, #image5 {
+	width: 100%;
+	height: 100%;
+
+}
+
+/**/
+
+#contactform {
+	width: 100%;
+	padding: 30px;
+	margin-bottom: 40px;
+}
+
+}
